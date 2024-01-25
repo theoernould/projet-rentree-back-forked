@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+            redirect-uri: ${GITHUB_REDIRECT_URI}
+            scope: user:email
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+github:
+  repo:
+    owner: theoernould
+    name: projet-rentree-front-forked
+    access-token: ${GITHUB_REPO_ACCESS_TOKEN}
